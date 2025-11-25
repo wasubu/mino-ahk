@@ -2,7 +2,7 @@
 #Include <IMEv2>
 
 RControl::{
-	SoundBeep 850 ;1000 the value before
+	SoundBeep 850
 	Send "!``"
 	ToolTip
 	SetTimer processJP, -1
@@ -17,7 +17,6 @@ processJP() {
 }
 
 showLang(){
-
 	if  IME_GET() = 1
 		ToolTip "日本語 🇯🇵"
 	else if IME_GET() = 0
